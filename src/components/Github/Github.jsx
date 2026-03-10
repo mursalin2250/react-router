@@ -19,7 +19,7 @@ const Github = () => {
                <img src={data.avatar_url} alt="" className='rounded-2xl' /> 
             </div>
             <div className="split w-[50%] flex flex-col justify-center items-start">
-                <p className='px-3 bg-orange-700 rounded-full text-white'>{data.login}</p>
+                <p className='px-3 bg-orange-700 rounded-full text-white'><a href={data.html_url} target='blank'>{data.login}</a></p>
                 <h1 className='text-4xl mt-3 font-bold'>{data.name}</h1>
                 <div className='pt-8 flex flex-col gap-2'>
                     <p className='w-[80%]'><span className='font-bold'>Bio:</span> {data.bio}</p>
